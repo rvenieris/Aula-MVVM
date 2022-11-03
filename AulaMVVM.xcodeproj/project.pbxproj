@@ -11,6 +11,13 @@
 		8A4CDC8D28F7016F0027494A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CDC8C28F7016F0027494A /* ContentView.swift */; };
 		8A4CDC8F28F701700027494A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4CDC8E28F701700027494A /* Assets.xcassets */; };
 		8A4CDC9228F701700027494A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4CDC9128F701700027494A /* Preview Assets.xcassets */; };
+		8A4CDC9D28F701A40027494A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CDC9C28F701A40027494A /* LoginView.swift */; };
+		8A4CDC9F28F701BC0027494A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CDC9E28F701BC0027494A /* User.swift */; };
+		8A4CDCA128F701CA0027494A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CDCA028F701CA0027494A /* UserViewModel.swift */; };
+		8A4CDCA328F7061E0027494A /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CDCA228F7061E0027494A /* UserView.swift */; };
+		8A4CDCA728F72C4B0027494A /* AllUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CDCA628F72C4B0027494A /* AllUsersView.swift */; };
+		8C61011829135C670074684E /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C61011729135C670074684E /* UserDAO.swift */; };
+		8C61011A291368F00074684E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8C610119291368F00074684E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		8A4CDC8C28F7016F0027494A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8A4CDC8E28F701700027494A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A4CDC9128F701700027494A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A4CDC9C28F701A40027494A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8A4CDC9E28F701BC0027494A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8A4CDCA028F701CA0027494A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		8A4CDCA228F7061E0027494A /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		8A4CDCA628F72C4B0027494A /* AllUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUsersView.swift; sourceTree = "<group>"; };
+		8C61011729135C670074684E /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		8C610119291368F00074684E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +65,12 @@
 		8A4CDC8928F7016F0027494A /* AulaMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				8A4CDC8A28F7016F0027494A /* AulaMVVMApp.swift */,
-				8A4CDC8C28F7016F0027494A /* ContentView.swift */,
+				8A4CDC9B28F701900027494A /* View */,
+				8A4CDC9A28F7018A0027494A /* ViewModel */,
+				8A4CDC9928F701840027494A /* Model */,
+				8A4CDC9828F7017A0027494A /* App */,
 				8A4CDC8E28F701700027494A /* Assets.xcassets */,
+				8C610119291368F00074684E /* README.md */,
 				8A4CDC9028F701700027494A /* Preview Content */,
 			);
 			path = AulaMVVM;
@@ -65,6 +82,42 @@
 				8A4CDC9128F701700027494A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A4CDC9828F7017A0027494A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8A4CDC8A28F7016F0027494A /* AulaMVVMApp.swift */,
+				8A4CDC8C28F7016F0027494A /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8A4CDC9928F701840027494A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A4CDC9E28F701BC0027494A /* User.swift */,
+				8C61011729135C670074684E /* UserDAO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A4CDC9A28F7018A0027494A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A4CDCA028F701CA0027494A /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8A4CDC9B28F701900027494A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A4CDC9C28F701A40027494A /* LoginView.swift */,
+				8A4CDCA228F7061E0027494A /* UserView.swift */,
+				8A4CDCA628F72C4B0027494A /* AllUsersView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C61011A291368F00074684E /* README.md in Resources */,
 				8A4CDC9228F701700027494A /* Preview Assets.xcassets in Resources */,
 				8A4CDC8F28F701700027494A /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +191,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4CDC9F28F701BC0027494A /* User.swift in Sources */,
+				8A4CDC9D28F701A40027494A /* LoginView.swift in Sources */,
+				8A4CDCA728F72C4B0027494A /* AllUsersView.swift in Sources */,
+				8C61011829135C670074684E /* UserDAO.swift in Sources */,
 				8A4CDC8D28F7016F0027494A /* ContentView.swift in Sources */,
+				8A4CDCA128F701CA0027494A /* UserViewModel.swift in Sources */,
+				8A4CDCA328F7061E0027494A /* UserView.swift in Sources */,
 				8A4CDC8B28F7016F0027494A /* AulaMVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,7 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AulaMVVM/Preview Content\"";
-				DEVELOPMENT_TEAM = 6L559RGHR3;
+				DEVELOPMENT_TEAM = JT55BTWL93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -296,7 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AulaMVVM/Preview Content\"";
-				DEVELOPMENT_TEAM = 6L559RGHR3;
+				DEVELOPMENT_TEAM = JT55BTWL93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
